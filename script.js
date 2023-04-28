@@ -30,17 +30,3 @@ window.Animal = Animal;
 window.Dog = Dog;
 window.Cat = Cat;
 
-function getElementsByAttribute(attribute, value) {
-    const elementsWithAttribute = [];
-    const allElements = document.getElementsByTagName("*");
-  
-    for (let i = 0; i < allElements.length; i++) {
-      if (allElements[i].getAttribute(attribute) === value) {
-        elementsWithAttribute.push(allElements[i]);
-      }
-    }
-  
-    return elementsWithAttribute;
-  }
-   const elementsWithBarBaz = getElementsByAttribute("data-bar", "baz");
-      console.log(elementsWithBarBaz);
